@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FakeStore App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="Logo.png" type="image/png">
+</head>
+<body>
+  <!-- ✅ Solo el menú en HTML -->
+  <nav>
+    <button onclick="cargarHome()">Inicio</button>
+    <button onclick="cargarFavoritos()">Favoritos</button>
+    <button onclick="cargarInformativa()">Informativa</button>
+    <button onclick="cargarOriginal()">Original</button>
+  </nav>
+
+  <!-- Zona dinámica -->
+  <main id="app"></main>
+
+  <script src="js/Conexion.js"></script>
+  <script src="js/Home.js"></script>
+  <script src="js/Detalle.js"></script>
+  <script src="js/Favoritos.js"></script>
+  <script src="js/Informativa.js"></script>
+  <script src="js/Original.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", cargarHome);
+  </script>
+</body>
+</html>
